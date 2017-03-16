@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Hillarious Dissertations</title>
+  <meta name="description" content="">
+  <meta name="author" content="Andriy Gazin">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" style="text-align:center;">
+        <img src="images/0001.GIF" name="canvas" />
+        <p>
+          <input onclick="displayImage();" type=button value="Більше абсурду">
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+
+  var imagesArray = ["0001.GIF", "0003.GIF", "0005.GIF", "0007.GIF", "0013.GIF", "0017.GIF", "0019.GIF", "0021.GIF", "0023.GIF", "0035.GIF", "0045.GIF", "0049.GIF", "0069.GIF", "0077.GIF", "0079.GIF", "0081.GIF", "0089.GIF", "0139.GIF"];
+
+  function displayImage(){
+
+    var num = Math.floor(Math.random() * (imagesArray.length+1));
+    document.canvas.src = 'images/' + imagesArray[num];
+
+}
+
+  </script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
